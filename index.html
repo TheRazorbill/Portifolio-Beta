@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifolio Website</title>
+    <meta name="description" content="Portifolio Website | Razor">
+    <title>Portifolio Website | Razor</title>
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
     <div class="overlay"></div>
     <header>
         <a href="#" class="logo"> <span>R</span>azor</a>
-        <ul class="navlist">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
+        <nav>
+            <ul class="navlist">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
         <div class="right-header">
             <a href="#" class="btn">Chat <i class="bx bx-message-dots"></i></a>
-            <div class="menu-icon">
+            <div class="menu-icon" aria-label="Abrir Menu">
                 <div class="bar"></div>
             </div>
         </div>
@@ -27,72 +30,72 @@
 
     <main id="main-content">
       <section class="home" id="home">
-        <div class="hero-info">
-            <h3>Seja Bem Vindo</h3>
-            <h1>Oi, eu sou Razor</h1>
+        <div class="container">
+            <div class="hero-info">
+                <h3>Seja Bem Vindo</h3>
+                <h1>Oi, eu sou Razor</h1>
 
-            <div class="text-animated">
-                <h2><span class="typewriter-text"></span></h2>
+                <div class="text-animated">
+                    <h2><span class="typewriter-text"></span></h2>
+                </div>
+
+                <p>Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras e eficientes. Com foco em transformar ideias complexas em interfaces intuitivas e funcionais, busco sempre as melhores práticas de desenvolvimento para entregar produtos de alta qualidade e impacto visual. Meu objetivo é construir experiências web que cativem e engajem os usuários.</p>
+
+                <div class="btn-box">
+                    <a href="#" class="btn">Contrate-me! <i class="bx bx-right-arrow-alt"></i></a>
+                    <a href="#" class="btn d-CV">Download CV <i class="bx bx-download"></i></a>
+                </div>
+
+                <div class="social-media">
+                    <div class="bg-icon">
+                        <a href="#" aria-label="Meu Instagram"> <i class="bx bxl-instagram"></i></a>
+                        <span></span>
+                    </div>
+                    <div class="bg-icon">
+                        <a href="https://github.com/TheRazorbill" target="_blank" aria-label="Meu GitHub"> <i class="bx bxl-github"></i></a>
+                        <span></span>
+                    </div>
+                    <div class="bg-icon">
+                        <a href="#" aria-label="Meu Twitter"> <i class="bx bxl-twitter"></i></a>
+                        <span></span>
+                    </div>
+                    <div class="bg-icon">
+                        <a href="#" aria-label="Meu LinkedIn"> <i class="bx bxl-linkedin"></i></a>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-
-            <p>Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras e eficientes. Com foco em transformar ideias complexas em interfaces intuitivas e funcionais, busco sempre as melhores práticas de desenvolvimento para entregar produtos de alta qualidade e impacto visual. Meu objetivo é construir experiências web que cativem e engajem os usuários.</p>
-
-            <div class="btn-box">
-                <a href="#" class="btn">Contrate-me! <i class="bx bx-right-arrow-alt"></i></a>
-                <a href="#" class="btn d-CV">Download CV <i class="bx bx-download"></i></a>
-            </div>
-
-             <div class="divsocial-media">
-                <div class="bg-icon">
-                    <a href="#"> <i class="bx bxl-instagram"></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"> <i class="bx bxl-github"></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"> <i class="bx bxl-twitter"></i></a>
-                    <span></span>
-                </div>
-                <div class="bg-icon">
-                    <a href="#"> <i class="bx bxl-linkedin"></i></a>
-                    <span></span>
+            <div class="img-hero">
+                <img src="img.png" alt="Razor">
+                <div class="rotate-text">
+                    <div class="text">
+                        <p>I'm Dev</p>
+                    </div>
+                    <span><i></i></span>
                 </div>
             </div>
         </div>
-        <div class="img-hero">
-            <img src="img.png" alt="Razor">
-            <div class="rotate-text">
-                <div class="text">
-                    <p>I'm Dev</p>
-                </div>
-                <span><i></i></span>
-            </div>
-        </div>
-    </section>
+      </section>
 
       <section id="habilidades" class="skills portfolio-section">
         <div class="container">
-          <h2>Minhas Habilidades</h2>
+          <h2 class="visually-hidden">Minhas Habilidades</h2>
           <div class="skills-grid">
             <div class="skill-item">
               <h3>HTML5</h3>
-              <p>
-                Conhecimento basico em HTML porem buscando sempre aprender mais
-              </p>
+              <p>Conhecimento básico em HTML, buscando sempre aprender mais para criar estruturas semânticas e acessíveis.</p>
             </div>
             <div class="skill-item">
               <h3>CSS</h3>
-              <p>Estilização responsiva e moderna com CSS3.</p>
+              <p>Estilização responsiva e moderna com CSS3, com foco em layouts flexíveis e animações suaves.</p>
             </div>
             <div class="skill-item">
               <h3>JavaScript</h3>
-              <p>Script orientado a objetos e plataforma cruzada usada para tornar as páginas da Web interativas</p>
+              <p>Script orientado a objetos e multiplataforma, usado para tornar as páginas da Web interativas e dinâmicas.</p>
             </div>
             <div class="skill-item">
               <h3>Python</h3>
-              <p>Conhecimento basico em Python</p>
+              <p>Conhecimento básico em Python, aplicando a linguagem para scripts e automação de tarefas.</p>
             </div>
           </div>
         </div>
@@ -102,56 +105,30 @@
         <div class="container">
           <h2>Meus Projetos</h2>
           <div class="projects-carousel-wrapper">
-            <button id="prev-project" class="carousel-button prev">&lt;</button>
+            <button id="prev-project" class="carousel-button prev" aria-label="Projeto Anterior">&lt;</button>
             <div class="projects-grid">
               <div class="project-item">
                 <img src="Acessibilidade.png" alt="Acessibilidade-Web-2.0" />
                 <h3>Acessibilidade-Web-2.0</h3>
-                <p>
-                  Este é um projeto mais avançado focado em demonstrar e
-                  explorar os desafios comuns de acessibilidade.
-                </p>
+                <p>Este é um projeto mais avançado focado em demonstrar e explorar os desafios comuns de acessibilidade.</p>
                 <div class="project-links">
-                  <a
-                    href="https://therazorbill.github.io/Acessibilidade-Web-2.0/"
-                    target="_blank"
-                    class="btn"
-                    >Ver Projeto</a
-                  >
-                  <a
-                    href="https://github.com/TheRazorbill/Acessibilidade-Web-2.0"
-                    target="_blank"
-                    class="btn"
-                    >GitHub</a
-                  >
+                  <a href="https://therazorbill.github.io/Acessibilidade-Web-2.0/" target="_blank" class="btn">Ver Projeto</a>
+                  <a href="https://github.com/TheRazorbill/Acessibilidade-Web-2.0" target="_blank" class="btn">GitHub</a>
                 </div>
               </div>
               <div class="project-item">
                 <img src="Pagina de login.png" alt="Pagina de login" />
                 <h3>Pagina de login</h3>
-                <p>
-                  Pagina de login, Register, Esqueci minha senha, Recuperar
-                  senha... Tecnologias utilizadas: HTML CSS JS
-                </p>
+                <p>Página de login completa com registro e recuperação de senha, utilizando HTML, CSS e JavaScript.</p>
                 <div class="project-links">
-                  <a
-                    href="https://github.com/TheRazorbill/Pagina-de-login"
-                    target="_blank"
-                    class="btn"
-                    >Ver Projeto</a
-                  >
-                  <a
-                    href="https://therazorbill.github.io/Pagina-de-login/"
-                    target="_blank"
-                    class="btn"
-                    >GitHub</a
-                  >
+                  <a href="https://therazorbill.github.io/Pagina-de-login/" target="_blank" class="btn">Ver Projeto</a>
+                  <a href="https://github.com/TheRazorbill/Pagina-de-login" target="_blank" class="btn">GitHub</a>
                 </div>
               </div>
               <div class="project-item">
               </div>
             </div>
-            <button id="next-project" class="carousel-button next">&gt;</button>
+            <button id="next-project" class="carousel-button next" aria-label="Próximo Projeto">&gt;</button>
           </div>
         </div>
       </section>
@@ -159,16 +136,11 @@
       <section id="contato" class="contact portfolio-section">
         <div class="container">
           <h2>Entre em Contato</h2>
-          <p>Apenas demonstrativo</p>
+          <p>Apenas para demonstração. Sinta-se à vontade para se conectar pelas redes sociais (so tem o github).</p>
           <form action="#" method="POST">
             <input type="text" name="nome" placeholder="Seu Nome" required />
             <input type="email" name="email" placeholder="Seu Email" required />
-            <textarea
-              name="mensagem"
-              placeholder="Sua Mensagem"
-              rows="6"
-              required
-            ></textarea>
+            <textarea name="mensagem" placeholder="Sua Mensagem" rows="6" required></textarea>
             <button type="submit" class="btn">Enviar Mensagem</button>
           </form>
           <div class="social-links">
@@ -184,6 +156,7 @@
         <p>&copy; 2025 Razor. Todos os direitos reservados.</p>
       </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="Script.js" defer></script>
   </body>
 </html>
